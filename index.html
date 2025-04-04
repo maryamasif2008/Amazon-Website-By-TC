@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 font-sans text-gray-800">
+
+<nav class="bg-gray-800 text-white py-5 px-4">
+    <div class="flex justify-between items-center">
+        <div class="text-xl font-bold">Amazon Clone</div>
+    
+        <button id="hamburger" class="sm:hidden text-3xl">
+            &#9776;
+        </button>
+
+        <ul class="hidden sm:flex space-x-6">
+            <li><a href="#" class="hover:text-yellow-500">All</a></li>
+            <li><a href="#" class="hover:text-yellow-500">Prime Video</a></li>
+            <li><a href="#" class="hover:text-yellow-500">Today's Deals</a></li>
+            <li><a href="#" class="hover:text-yellow-500">Customer Service</a></li>
+            <li><a href="#" class="hover:text-yellow-500">Gift Cards</a></li>
+            <li><a href="#" class="hover:text-yellow-500">Registry</a></li>
+        </ul>
+    </div>
+
+    <ul id="mobile-nav" class="sm:hidden space-y-4 mt-4 hidden">
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">All</a></li>
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">Prime Video</a></li>
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">Today's Deals</a></li>
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">Customer Service</a></li>
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">Gift Cards</a></li>
+        <li><a href="#" class="block py-2 text-center hover:text-yellow-500">Registry</a></li>
+    </ul>
+</nav>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function () {
+        const mobileNav = document.getElementById('mobile-nav');
+        mobileNav.classList.toggle('hidden');
+    });
+</script>
+
+    <main class="my-6">
+
+<section class="banner mb-6">
+    <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/290482973/original/8fad458c759af4a2d652d777c2cfd4d491d2c35e/create-website-banner-designs-and-amazon-product-design.jpg" alt="Amazon Banner" class="w-full h-auto animate-fade-in">
+</section>
+
+<section class="products mx-6">
+    <h2 class="text-xl font-bold mb-4 text-yellow-500">SHORT TOPS FOR GIRLS</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://i.pinimg.com/736x/21/b9/65/21b965faf0cafbb2d13430e54248eb2f.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$49.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/713E1SXZVcL._AC_SX569_.jpg" alt="Product 2" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$99.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/71ULP4PuIXL._AC_UY1000_.jpg" alt="Product 3" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$149.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/71H745gvbbL._AC_UY1000_.jpg" alt="Product 4" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$199.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 class="text-xl font-bold mt-8 mb-4 text-yellow-500">COSMETIC PRODUCTS</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/71HIWANJM3L._AC_UF1000,1000_QL80_.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$69.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/S/al-na-9d5791cf-3faf/7c7ba316-df36-4211-a495-6728e6f8fa92._SL480_.jpg" alt="Product 2" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$89.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/81jY1a0T8wL._AC_UF1000,1000_QL80_.jpg" alt="Product 3" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$159.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://discountstore.pk/cdn/shop/files/71D1_1nzzML.jpg?v=1723649743" alt="Product 4" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$599.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    </div>
+    
+
+    <h2 class="text-xl font-bold mt-8 mb-4 text-yellow-500">SIMPLE RINGS</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://files.jewelfeed.com/catalog/items/79b7c696-000b-4189-a763-34cc91ab5ab7_aWwvQTY.jpg.800x800_q85_background.jpg" alt="Product 1" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$29.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://static.wixstatic.com/media/91d78a_89ac2b0e8c684622895f67bd975bde78~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Product 2" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$59.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://i0.wp.com/i.pinimg.com/originals/fe/02/e7/fe02e7b32019c43b53e4c5a24f550dab.jpg" alt="Product 3" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$239.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDNbos4pc9RSBf7_OGkd2OoARL97nAUEEcU0BcfO-f4-iVU5lUszc-r0wi76Q67Sv8nlo&usqp=CAU" alt="Product 4" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$99.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    </div>
+    
+    <h2 class="text-xl font-bold mt-8 mb-4 text-yellow-500">FROCK FOR WOMEN</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKOkqpgqSGuY7El3LYpJszK257MyswX-RDEQ&s" alt="Product 1" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$449.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/PH/OR/UC/47065519/whatsapp-image-2021-09-10-at-10-25-39-am-500x500.jpeg" alt="Product 2" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$999.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_EqifYIsxqedhkep2ZGHHRdwqRzdGgSfij4U65toUFkoPZv0XdBpaiy5_aXee_sv81Lg&usqp=CAU" alt="Product 3" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$949.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://s.alicdn.com/@sc04/kf/HTB1iXhJMFXXXXXCXXXXq6xXFXXX1.jpg_300x300.jpg" alt="Product 4" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$899.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    </div>
+    
+
+    <h2 class="text-xl font-bold mt-8 mb-4 text-yellow-500">LATEST WATCHES</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <!-- Product 1 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://thesaltyfox.com.au/cdn/shop/files/Silicone1080x1080-Pink3_1200x.jpg?v=1697063868" alt="Product 1" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$49.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 2 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/I/71VJ02mFLCL._AC_UY1000_.jpg" alt="Product 2" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$99.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 3 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MN6K3_FV98_VW_34FR+watch-case-40-aluminum-silver-cell-se_VW_34FR+watch-face-40-pride-sport-loop-se_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=Nkg3dDQ2UTVZQ2pPRExIemI0emdFOXVEWlVOekh0V1RoVFpRaXA4eXJqTnRmNmQwdmp6cVNETDNwdW9DdlEvWHVDTzRRaC84T1VMbXJRN05SRldIekkzalJNMWVLUXVaNEFMTEtmUUNEd1dmOTdTcmxSL3hGZ0RjMmlyUmJPQmJybHh6WkV3K2hhWnAyYkNRREVZMmxJdkwxWGxoTjFpWFNKUkNacjc3WTNxQ1RlL3AxRzV5SVRWdEVjOUNzaUZOclRNSDE2TkNRbnBpQlJ6dXd3WUMxZkhFU1k5dTdtMDBreUVFR0w5WktEVQ" alt="Product 3" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$149.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    
+        <!-- Product 4 -->
+        <div class="product-card bg-white p-4 rounded-md shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl hover:cursor-pointer flex flex-col items-center">
+            <img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/c676fc4f-859b-4d10-ac79-5e24c56ca75a.__CR312,312,2077,2077_PT0_SX300_V1___.jpg" alt="Product 4" class="w-full h-48 object-cover mb-4">
+            <p class="text-xl font-semibold mb-2">$199.99</p>
+            <button class="bg-yellow-500 text-white px-4 py-2 rounded-md opacity-0 hover:opacity-100 transition-opacity duration-300">Add to Cart</button>
+        </div>
+    </div>    
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="footer-links flex justify-center space-x-6">
+            <a href="#" class="hover:text-yellow-500">About Amazon</a>
+            <a href="#" class="hover:text-yellow-500">Careers</a>
+            <a href="#" class="hover:text-yellow-500">Press Releases</a>
+            <a href="#" class="hover:text-yellow-500">Amazon Devices</a>
+        </div>
+        <p class="text-center text-sm mt-4">&copy; 2025 Amazon Clone - All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
